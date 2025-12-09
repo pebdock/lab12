@@ -48,7 +48,6 @@ public class LogicsImpl implements Logics {
         .stream()
         .map(v -> v < this.size)
         .toList();
-git add .
     }
 
     /**
