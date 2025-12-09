@@ -1,7 +1,6 @@
 package it.unibo.es1;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -9,6 +8,8 @@ import java.util.List;
  * Implementation of the Logics interface.
  */
 public class LogicsImpl implements Logics {
+    
+    private final static int INCREMENT = 1;
 
     private int size;
     private ArrayList<Integer> values;
@@ -58,7 +59,7 @@ public class LogicsImpl implements Logics {
         if (values.get(elem) == size) {
             return size;
         } else {
-            final int newvalue = values.get(elem) + 1;
+            final int newvalue = values.get(elem) + INCREMENT;
             values.set(elem, newvalue);
             return newvalue;
         }
