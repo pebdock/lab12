@@ -8,11 +8,11 @@ import java.util.List;
  * Implementation of the Logics interface.
  */
 public class LogicsImpl implements Logics {
-    
-    private final static int INCREMENT = 1;
 
-    private int size;
-    private ArrayList<Integer> values;
+    private static final int INCREMENT = 1;
+
+    private final int size;
+    private final List<Integer> values;
 
     /**
      * Constructor.
