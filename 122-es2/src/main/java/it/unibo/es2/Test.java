@@ -5,6 +5,8 @@ package it.unibo.es2;
  */
 public final class Test {
 
+    private static final int SIZE = 4;
+
     private Test() { }
 
     /*
@@ -26,6 +28,6 @@ public final class Test {
      * @param args ignored
      */
     public static void main(final String... args) {
-        new GUI(4);
+        new GUI(SIZE);
     }
 }
